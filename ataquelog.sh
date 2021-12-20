@@ -1,3 +1,32 @@
+#!/bin/bash
+
+Negro='\033[0;30m'
+Rojo='\033[0;31m'
+Verde='\033[0;32m'
+Amarillo='\033[0;33m'
+Azul='\033[0;34m'
+Purpura='\033[0;35m'
+Cyan='\033[0;36m'
+Blanco='\033[0;37m'
+Normal='\033[0m'
+
+cat << "INFO"
+               _                     _ _ _   
+              | |                   | (_) |  
+ __      _____| |__   __ _ _   _  __| |_| |_ 
+ \ \ /\ / / _ \ '_ \ / _` | | | |/ _` | | __| 
+  \ V  V /  __/ |_) | (_| | |_| | (_| | | |_ 
+   \_/\_/ \___|_.__/ \__,_|\__,_|\__,_|_|\__| 1.0
+             http://www.hackingyseguridad.con
+INFO
+
+if [ -z "$1" ]; then
+        printf "${Amarillo}" ; echo
+        echo "Test vulnerabilidades web."
+        echo "Uso: $0 <URL>"; printf "${Normal}\n"
+        exit 0
+fi
+
 echo
 echo
 echo
